@@ -1,0 +1,6 @@
+services:
+  db-api:
+    build: .  # Собираем образ из Dockerfile в текущей папке
+    container_name: db-api-container
+    ports:
+      - "9999:9999"  # Пробрасываем порт 9999 из контейнера на хост
